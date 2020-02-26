@@ -4,42 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_orange_light">
 
-    <TextView
-        android:id="@+id/textBox1"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click1"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
 
-    <TextView
-        android:id="@+id/textBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click2"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <HorizontalScrollView
+        android:layout_width="352dp"
+        android:layout_height="100dp"
 
-    <TextView
-        android:id="@+id/textBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="28dp"
+        android:background="@android:color/white"
 
-    <TextView
-        android:id="@+id/textBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click4"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:scrollbars="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="1" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="2" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="3" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="4" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="5" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="6" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="7" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="8" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="8" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="9" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:text="10" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
