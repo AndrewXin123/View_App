@@ -42,6 +42,7 @@
 
     <Button
         android:id="@+id/change5"
+        android:onClick="onClick5"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@android:color/holo_green_light"

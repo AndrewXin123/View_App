@@ -43,8 +43,7 @@
             android:layout_marginTop="20dp"
             android:background="@android:color/white"
             android:text="Button"
-            android:textSize="35sp"
-            app:layout_constraintEnd_toRightOf="@id/layout" />
+            android:textSize="35sp"/>
 
         <ScrollView
             android:layout_width="300dp"
@@ -109,6 +108,7 @@
 
     <Button
         android:id="@+id/change7"
+        android:onClick="onClick7"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@android:color/holo_green_light"
